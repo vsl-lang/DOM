@@ -1,0 +1,24 @@
+name: DOM
+description: VSL DOM bindings
+
+version: 0.0.1
+
+target: obj
+
+cache:
+    directory: cache
+
+sources:
+    - src/**/*.vsl
+    - artifacts/*.vsl
+
+bindgen:
+    - language: wasm
+      sources:
+          - webidl/*.webidl
+      output:
+          name: dom
+          directory: artifacts/
+
+docgen:
+    themeColor: #E34C26
