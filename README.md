@@ -1,6 +1,10 @@
 # DOM
 VSL raw DOM bindings communicating using WASM/IDL interface
 
+This library allows you to communicate with all and every JS API _however_ it is
+recommended to use the `Web` library which offers high-level bindings and is a
+lot more user-friendly.
+
 ## WebIDL
 VSL aims to provide an interface to the [WHATWG](https://spec.whatwg.org) or [W3C](https://www.w3.org/TR/)
 standards. VSL's DOM library current integrates with the following specifications:
