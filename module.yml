@@ -1,5 +1,5 @@
 name: DOM
-description: VSL DOM bindings
+description: VSL DOM bindings for WASM.
 
 version: 0.0.1
 
@@ -9,8 +9,9 @@ cache:
     directory: cache
 
 sources:
-    - src/**/*.vsl
-    - artifacts/*.vsl
+    - path: "@(src|artifacts)/*.vsl"
+      filters:
+        - arch: wasm
 
 bindgen:
     - language: wasm
@@ -21,4 +22,4 @@ bindgen:
           directory: artifacts/
 
 docgen:
-    themeColor: #E34C26
+    themeColor: '#E34C26'

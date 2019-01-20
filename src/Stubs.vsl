@@ -1,0 +1,14 @@
+/*
+ * This specifies certain stubs to emulate types which VSL and JS do not support
+ */
+
+private class JSFunction {
+    private init() {}
+}
+
+public typealias EventListener = JSFunction
+public typealias EventHandler = JSFunction
+
+@mock(ui32)
+@dynamic(false)
+public class HTMLSlotElement: Element {}

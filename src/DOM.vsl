@@ -1,0 +1,2 @@
+public const window: Window = Window::JS_GLOBAL
+public const document: Document = Document::window.dispatchAccess(target: "document")
